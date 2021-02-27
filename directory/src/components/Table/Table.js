@@ -1,7 +1,7 @@
 import React, { Container, useState, useEffect} from "react";
 import API from '../../utils/api';
 import TableHead from "../tableHeader";
-import TableBody from '../tableBody';
+// import TableBody from '../tableBody';
 import './Table.css';
 
 const styles = {
@@ -10,6 +10,17 @@ const styles = {
   }
 };
 
+function Search() {
+    const [users, setUsers] = useState([]);
+    const [searchedUser, setSearchedUser] = useState("");
+}
+
+    function loadResults() {
+        API.getUsers()
+        .then(res => {
+            console.log(res);
+        }).catch(err => console.log(err));
+    }
 
 function Table() {
   return (
