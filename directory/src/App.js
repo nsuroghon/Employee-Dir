@@ -1,6 +1,6 @@
 import React from "react";
 import Form from "./components/form";
-import Navigation from './components/navigation'
+import Navigation from './components/Navigation/navigation'
 import Reset from './components/reset'
 import TableHead from "./components/tableHeader";
 
