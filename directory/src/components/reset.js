@@ -3,11 +3,9 @@ import React, { Component } from "react";
 class Reset extends Component {
     render() {
         return(
-            <>
-            <button type="button" className="reset">Reset</button>
-            </>
-        )
-    }
-}
+            <div>
+                <button type="button" className="reset">Reset</button>
+            </div>
+        )}}
 
 export default Reset;

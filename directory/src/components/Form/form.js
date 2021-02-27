@@ -9,7 +9,6 @@ class Form extends React.Component {
                     <label>
                         <input type="text" name="name" value="filter by (property)" />
                     </label>
-                        <input type="submit" value="Submit" />
                 </form>
               </div>
               <div className="form-container">
@@ -17,7 +16,6 @@ class Form extends React.Component {
                     <label>
                         <input type="text" name="name" value="filter by (property)" />
                     </label>
-                        <input type="submit" value="Submit" />
                 </form>
               </div>
           </div>
