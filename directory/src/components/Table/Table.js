@@ -10,10 +10,9 @@ const styles = {
   }
 };
 
-function Search() {
+function Table() {
     const [users, setUsers] = useState([]);
     const [searchedUser, setSearchedUser] = useState("");
-}
 
     function loadResults() {
         API.getUsers()
@@ -22,7 +21,6 @@ function Search() {
         }).catch(err => console.log(err));
     }
 
-function Table() {
   return (
     <section style={styles.sectionStyles} className="section">
       <TableHead />
