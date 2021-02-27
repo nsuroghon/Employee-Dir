@@ -1,17 +1,18 @@
 import React from "react";
+import './forms.css'
 
 class Form extends React.Component {
     render() {
       return(
-          <div className="container">
-              <div className="form-container">
+          <div className="formDiv">
+              <div>
                 <form>
                     <label>
                         <input type="text" name="name" value="filter by (property)" />
                     </label>
                 </form>
               </div>
-              <div className="form-container">
+              <div>
                 <form>
                     <label>
                         <input type="text" name="name" value="filter by (property)" />

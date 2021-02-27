@@ -1,0 +1,8 @@
+.formDiv {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: red;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
