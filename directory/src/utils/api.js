@@ -2,6 +2,6 @@ import axios from "axios";
 
 export default {
   getUsers: function() {
-    return axios.get("https://randomuser.me/api/?inc=picture,name,phone,email,location,dob")
+    return axios.get("https://randomuser.me/api/?results=20&inc=id,picture,name,cell,email,dob")
   }
 };
