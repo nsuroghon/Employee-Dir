@@ -1,11 +1,18 @@
 import React from "react";
 import './Table.css'
+import API from '../../utils/api'
 // // import API from '../../utils/api';
 // // import TableHead from "../tableHeader";
 // // import TableBody from '../tableBody';
 // import './Table.css';
 
 class Table extends React.Component {
+
+    state = {
+        result: {},
+        search: ""
+    }
+
     render() {
         return (
             <table>
