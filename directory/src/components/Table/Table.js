@@ -1,32 +1,31 @@
-import React, { Component } from "react";
-import API from '../../utils/api';
-// import TableHead from "../tableHeader";
-// import TableBody from '../tableBody';
-import './Table.css';
+// import React from "react";
+// // import API from '../../utils/api';
+// // import TableHead from "../tableHeader";
+// // import TableBody from '../tableBody';
+// import './Table.css';
 
-const styles = {
-  sectionStyles: {
-    background: "orange"
-  }
-};
+// class Table extends React.Component {
+//     state = {
+//         search: "",
+//         users: [],
+//         results: [],
+//         error: ""
+//       };
 
-class Table extends Component {
-    state = {
-        search: "",
-        users: [],
-        results: [],
-      };
+//     componentDidMount() { 
+//         this.loadResults();
+//     };
 
-    componentDidMount() { 
-        this.loadUsers();
-    };
 
-    loadUsers = () => {
-        API.getUsers()
-          .then((res) => this.setState({ results: res.data.results, }) )
-          .catch((err) => console.log(err));
-    };
-}
+// }
+//     function loadResults() {
+//         API.getUsers()
+//           .then(res => {
+//               console.log(res);
+//           }).catch(err => console.log(err));
+//     };
+// }
+// render(){
 //   return (
 //     <section style={styles.sectionStyles} className="section">
       
@@ -40,5 +39,6 @@ class Table extends Component {
 //     </section>
 //   );
 // }
+// // }
 
-export default Table;
+// export default Table;

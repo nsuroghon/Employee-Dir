@@ -4,10 +4,10 @@ import './nav.css';
 class Navigation extends React.Component {
   render() {
     return(
-      <nav className="title">
-        <h1>Employee Directory</h1>
-        <p>Use the search form to narrow directory results.</p>
-      </nav>
+      <header>
+        <h1 className="text-center">Employee Directory</h1>
+          <p className="text-center">Use the Search Form to Narrow Directory Results</p>
+    </header>
     )
   }
 }

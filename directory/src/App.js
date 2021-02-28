@@ -1,8 +1,9 @@
 import React from "react";
 import Navigation from './components/Navigation/navigation'
 import Form from "./components/Form/form";
-// import TableHead from "./components/tableHeader";
-import Table from './components/Table/Table'
+import TableHead from "./components/tableHeader";
+import TableBody from "./components/tableBody";
+// import Table from './components/Table/Table'
 
 class App extends React.Component {
   render(){
@@ -10,7 +11,10 @@ class App extends React.Component {
       <div>
         <Navigation />
         <Form />
-        <Table />
+        <table>
+          <TableHead />
+          <TableBody />
+        </table>
       </div>
     )}}
 
