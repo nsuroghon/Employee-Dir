@@ -9,8 +9,15 @@ import API from '../../utils/api'
 class Table extends React.Component {
 
     state = {
-        result: {},
+        result: [],
         search: ""
+    }
+
+    componentDidMount(){
+        API.getUsers()
+        .then((res) => {this.setState({ result: res.data.results })
+        .catch(err => console.log(err));
+        })
     }
 
     render() {
