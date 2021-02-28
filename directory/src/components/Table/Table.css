@@ -1,9 +1,13 @@
-/* .section {
-    background: #f3e5f5;
-    padding: 20px;
-  }
-  
-  .section h2 {
-    text-align: center;
-  } */
-  
+table {
+  width: 80%; 
+  margin: auto;
+  text-align: center;
+  margin-top: 5%;
+  border-collapse: collapse;
+  border-top: 3px solid grey;
+  border-bottom: 3px solid grey;
+}
+
+thead {
+  border-bottom: 3px solid grey;
+}

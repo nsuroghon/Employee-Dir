@@ -1,8 +1,41 @@
-// import React from "react";
+import React from "react";
+import './Table.css'
 // // import API from '../../utils/api';
 // // import TableHead from "../tableHeader";
 // // import TableBody from '../tableBody';
 // import './Table.css';
+
+class Table extends React.Component {
+    render() {
+        return (
+            <table>
+                {/* Table Head */}
+                <thead>
+            <tr>
+                <th scope="col">Image</th>
+                <th scope="col">Name</th>
+                <th scope="col">Phone</th>
+                <th scope="col">Email</th>
+                <th scope="col">DOB</th>
+            </tr>
+                 </thead>
+
+                 {/* Table Body */}
+                 <tbody>
+            <tr>
+                <td>
+                {/* <img alt="" src="">Image</img> */}
+                </td>
+                <td>Name</td>
+                <td>Phone</td>
+                <td>Email</td>
+                <td>D.O.B.</td>
+            </tr>
+                 </tbody>
+            </table>
+        )
+    }
+}
 
 // class Table extends React.Component {
 //     state = {
@@ -25,20 +58,5 @@
 //           }).catch(err => console.log(err));
 //     };
 // }
-// render(){
-//   return (
-//     <section style={styles.sectionStyles} className="section">
-      
-//       <TableHead />
 
-//       <div className="container">
-
-//       </div>
-
-    
-//     </section>
-//   );
-// }
-// // }
-
-// export default Table;
+export default Table;
