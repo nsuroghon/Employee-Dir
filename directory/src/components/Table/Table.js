@@ -1,6 +1,6 @@
-import React, { Container, useState, useEffect} from "react";
+import React, { Component } from "react";
 import API from '../../utils/api';
-import TableHead from "../tableHeader";
+// import TableHead from "../tableHeader";
 // import TableBody from '../tableBody';
 import './Table.css';
 
@@ -10,36 +10,35 @@ const styles = {
   }
 };
 
-function Table() {
-    const [users, setUsers] = useState([]);
-    const [searchedUser, setSearchedUser] = useState("");
+class Table extends Component {
+    state = {
+        search: "",
+        users: [],
+        results: [],
+      };
 
-    useEffect(() => {  
-        (function loadResults() {
-          API.getUsers()
-           .then(res => {
-               console.log(res);
-               setUsers(res.data)
-          }).catch(err => console.log(err));
-        })()
-      }, [])
+    componentDidMount() { 
+        this.loadUsers();
+    };
 
-//need 2 handle input change
-// 1. Sort the table by 1 category
-// 2. Sort users by 1 category
-
-  return (
-    <section style={styles.sectionStyles} className="section">
+    loadUsers = () => {
+        API.getUsers()
+          .then((res) => this.setState({ results: res.data.results, }) )
+          .catch((err) => console.log(err));
+    };
+}
+//   return (
+//     <section style={styles.sectionStyles} className="section">
       
-      <TableHead />
+//       <TableHead />
 
-      <div className="container">
+//       <div className="container">
 
-      </div>
+//       </div>
 
     
-    </section>
-  );
-}
+//     </section>
+//   );
+// }
 
 export default Table;
