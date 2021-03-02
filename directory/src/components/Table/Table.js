@@ -7,17 +7,20 @@ import API from '../../utils/api'
 // import './Table.css';
 
 class Table extends React.Component {
-
-    state = {
-        result: [],
-        search: ""
+    
+    constructor() {
+        super();
+        this.statestate = {
+            result: [],
+            search: ""
+        }
     }
-
+    
     componentDidMount(){
         API.getUsers()
         .then((res) => {this.setState({ result: res.data.results })
+    })
         .catch(err => console.log(err));
-        })
     }
 
     render() {
@@ -40,7 +43,7 @@ class Table extends React.Component {
                 <td>
                 {/* <img alt="" src="">Image</img> */}
                 </td>
-                <td>Name</td>
+                <td>{this.state.result.name}</td>
                 <td>Phone</td>
                 <td>Email</td>
                 <td>D.O.B.</td>
