@@ -7,15 +7,12 @@ import API from '../../utils/api'
 // import './Table.css';
 
 class Table extends React.Component {
-    
-    constructor() {
-        super();
-        this.statestate = {
-            result: [],
-            search: ""
-        }
+
+    state = {
+        result: [],
+        search: ""
     }
-    
+
     componentDidMount(){
         API.getUsers()
         .then((res) => {this.setState({ result: res.data.results })
