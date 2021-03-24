@@ -13,7 +13,7 @@
 Week 19 Homework Resubmition. The React Employee Directory populates an organized employee list that is easily narrowed down by a search form.
 
 ## Visit
-[Visit Budget Tracker Application](https://fierce-reef-41934.herokuapp.com)
+[Visit Application Here](https://nsuroghon.github.io/Employee-Directory/)
 
 ## Preview
 ![Preview](https://github.com/nsuroghon/Budget-Tracker/blob/main/public/img/Screen%20Shot%202021-02-19%20at%2010.54.55%20PM.png)
