@@ -16,7 +16,7 @@ Week 19 Homework Resubmition. The React Employee Directory populates an organize
 [Visit Application Here](https://nsuroghon.github.io/Employee-Directory/)
 
 ## Preview
-![Preview](https://github.com/nsuroghon/Budget-Tracker/blob/main/public/img/Screen%20Shot%202021-02-19%20at%2010.54.55%20PM.png)
+![Preview](https://github.com/nsuroghon/Employee-Directory/blob/main/Screen%20Shot%202021-03-24%20at%2010.14.19%20AM.png)
 
 ## License
 MIT License.
