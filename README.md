@@ -10,7 +10,7 @@
 * [License](#license)
 
 ## Description
-Week 19 Homework Resubmition. The React Employee Directory populates an organized employee list that is easily narrowed down by a search form.
+Employee Directory is a web app intended to provide business owners an organized application to store and view a database of employees. 
 
 ## Visit
 [Visit Application Here](https://nsuroghon.github.io/Employee-Directory/)
